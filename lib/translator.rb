@@ -15,7 +15,14 @@ emojis = {}
 end
 
 def get_japanese_emoticon
-  
+   book_of_emoticon = load_library(file)
+  book_of_emoticon.each do |english_key, english_value|
+    english_value.each do |japanese_key, japanese_value|
+      if emoticon.include?(japanese_value)
+         return english_value[:japanese]
+      end
+    end
+  end
 end
 
 def get_english_meaning(file,emoticon)
