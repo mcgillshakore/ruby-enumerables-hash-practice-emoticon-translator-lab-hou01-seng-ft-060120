@@ -13,3 +13,11 @@ emojis = {}
   end
   emojis
 end
+
+def get_japanese_emoticon
+  
+end
+
+def get_english_meaning(file,emoticon)
+  
+end
