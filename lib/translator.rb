@@ -11,4 +11,5 @@ emojis = {}
       emojis[mood] = {:english => value[0], :japanese => value[1]}
     end
   end
+  emojis
 end
