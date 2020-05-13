@@ -14,7 +14,7 @@ emojis = {}
   emojis
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file, emoticon)
    book_of_emoticon = load_library(file)
   book_of_emoticon.each do |english_key, english_value|
     english_value.each do |japanese_key, japanese_value|
